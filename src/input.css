@@ -108,13 +108,6 @@
     @apply float-right brightness-0 invert min-h-contact-us-arrow;
   }
 
-  .contact-us-form-section {
-    @apply flex flex-col gap-y-1;
-  }
-
-  .contact-us-input {
-    @apply h-10 rounded-md p-2;
-  }
 }
 
 @import "tailwindcss/components";

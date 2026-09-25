@@ -155,28 +155,3 @@ function changeRepeatableConfigImage(selection) {
     legendElem.classList.add("hidden");
   }
 }
-
-function submitContactForm() {
-  // just in case the post request failed previously
-  document.getElementById("form-error-msg").innerText = "";
-  $.post(
-    "https://forms.hubspot.com/uploads/form/v2/6397011/dcddb8bb-d2fc-4c29-bfd1-590859eb48af",
-    {
-      first_name: $("#first_name").val(),
-      last_name: $("#last_name").val(),
-      industry_type: $("#industry").val(),
-      email: $("#email").val(),
-      message: $("#message").val(),
-    }
-  )
-    .done(function () {
-      const formElem = document.getElementById("contact-form");
-      formElem.classList.add("hidden");
-      const successMsg = document.getElementById("success-msg");
-      successMsg.classList.remove("hidden");
-    })
-    .fail(function () {
-      document.getElementById("form-error-msg").innerText =
-        "We're sorry, something went wrong. Please try again later.";
-    });
-}

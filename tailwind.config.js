@@ -76,7 +76,6 @@ module.exports = {
         hero: "40%",
         "header-text": "80%",
         "repeatable-config-img": "655px",
-        "contact-form": "444px",
         rolodex: "465px",
       },
       maxHeight: {
@@ -101,7 +100,6 @@ module.exports = {
         hero: "775px",
         "hero-button": "35px",
         "header-text": "50%",
-        "contact-us-name": "214px",
       },
       margin: {
         "hero-button-arrow": "11px",

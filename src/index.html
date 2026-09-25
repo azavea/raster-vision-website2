@@ -270,7 +270,7 @@
                     labeled.
                   </p>
                 </div>
-                <a href="https://groundwork.azavea.com/">
+                <a href="https://element84.com/groundwork/">
                   <div class="secondary-btn">
                     Start labeling with GroundWork
                   </div>
@@ -912,12 +912,11 @@
     <section>
       <div class="bg-blue-700">
         <div class="max-width-container pt-10 md:pt-28 pb-0">
-          <div class="md:flex md:flex-row-reverse md:justify-between gap-4">
-            <div class="basis-1/2">
+          <div class="flex justify-center">
+            <div class="w-full max-w-xl">
               <h3 class="large-headline text-white">How can we help?</h3>
               <p class="large-body text-white">
-                Please select a topic below or fill out our contact form related
-                to your inquiry.
+                Please select a topic below related to your inquiry, or click below to contact us.
               </p>
               <a href="https://github.com/azavea/raster-vision/discussions">
                 <div class="contact-us-option mt-4">
@@ -951,125 +950,27 @@
                   />
                 </div>
               </a>
-              <a href="https://www.azavea.com/projects/">
+              <a href="https://element84.com/projects">
                 <div class="contact-us-option">
                   <div class="contact-us-text">
                     <h4 class="large-body text-blue">Get inspired</h4>
                     <p class="medium-body text-gray-200">
                       Browse through a series of machine learning projects
-                      produced by Azavea Inc.
+                      produced by Element 84 Inc.
                     </p>
                   </div>
                   <img
                     src="images/icon-chevron-right.svg"
-                    alt="Go to Azavea's project page"
+                    alt="Go to Element 84's project page"
                     class="contact-us-arrow"
                   />
                 </div>
               </a>
-            </div>
-            <div
-              class="basis-1/2 flex pt-10 md:pt-0 justify-center align-middle"
-            >
-              <form
-                class="medium-body w-full md:max-w-contact-form"
-                id="contact-form"
-              >
-                <div class="flex flex-col gap-y-4">
-                  <div class="md:flex md:flex-row sm:justify-between gap-4">
-                    <div class="contact-us-form-section">
-                      <label for="first_name" class="text-white"
-                        >First name*</label
-                      >
-                      <input
-                        type="text"
-                        id="first_name"
-                        name="first_name"
-                        class="contact-us-input md:w-contact-us-name"
-                        required="required"
-                      />
-                    </div>
-                    <div class="contact-us-form-section pt-4 md:pt-0">
-                      <label for="last_name" class="text-white"
-                        >Last name*</label
-                      >
-                      <input
-                        type="text"
-                        id="last_name"
-                        name="last_name"
-                        class="contact-us-input md:w-contact-us-name"
-                        required="required"
-                      />
-                    </div>
-                  </div>
-                  <div class="contact-us-form-section">
-                    <label for="industry" class="text-white">Industry</label>
-                    <select
-                      name="industry"
-                      id="industry"
-                      class="contact-us-input"
-                    >
-                      <option value="none" selected disabled hidden>
-                        Select industry
-                      </option>
-                      <option value="Academia">Academia</option>
-                      <option value="Agriculture">Agriculture</option>
-                      <option value="Artificial intelligence">
-                        Artificial intelligence
-                      </option>
-                      <option value="Climate adaptation">
-                        Climate adaptation
-                      </option>
-                      <option value="Energy transition">
-                        Energy transition
-                      </option>
-                      <option value="Forestry">Forestry</option>
-                      <option value="Healthcare">Healthcare</option>
-                      <option value="Oceans & Water">Oceans & Water</option>
-                      <option value="Other">Other</option>
-                      <option value="Supply chain">Supply chain</option>
-                    </select>
-                  </div>
-                  <div class="contact-us-form-section">
-                    <label for="email" class="text-white">Email address*</label>
-                    <input
-                      type="text"
-                      id="email"
-                      name="email"
-                      class="contact-us-input"
-                      required="required"
-                    />
-                  </div>
-                  <div class="contact-us-form-section">
-                    <label for="message" class="text-white"
-                      >What would you like to accomplish with Raster
-                      Vision?</label
-                    >
-                    <textarea
-                      id="message"
-                      name="message"
-                      class="contact-us-input h-20"
-                    ></textarea>
-                  </div>
+              <a href="https://element84.com/who-we-are/contact-us/" target="_blank">
+                <div class="call-to-action-btn w-full text-center mt-6">
+                  Contact Us
                 </div>
-                <input
-                  type="submit"
-                  value="Send"
-                  class="call-to-action-btn w-full text-center mt-4 hover:cursor-pointer"
-                />
-                <div
-                  id="form-error-msg"
-                  class="text-white text-med mt-2 text-center"
-                ></div>
-              </form>
-              <div id="success-msg" class="hidden">
-                <h4 class="text-white text-center md:text-left">
-                  Message sent!
-                </h4>
-                <p class="large-body text-white text-center md:text-left">
-                  Someone will get back to you shortly.
-                </p>
-              </div>
+              </a>
             </div>
           </div>
           <div
@@ -1103,7 +1004,7 @@
             </div>
             <div class="mb-2 sm:mb-0">
               <a
-                href="https://azavea.com/privacy-policy/"
+                href="https://element84.com/privacy/"
                 class="underline sm:ml-4"
                 >Privacy Policy</a
               >
@@ -1199,12 +1100,6 @@
           specButton.innerHTML = "See more specs";
           specButton.ariaChecked = "off";
         }
-      });
-    </script>
-    <script>
-      $("form").submit(function (event) {
-        event.preventDefault();
-        submitContactForm();
       });
     </script>
     <script>
